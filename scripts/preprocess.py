@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Dataset Path (Update this if needed)
-data_path = r"E:\Story_Generator\data\writingPrompts"
+data_path = "data/writingPrompts"
 
 # Read dataset files
 def load_data(source_file, target_file):
@@ -19,7 +19,7 @@ def create_dataframe():
         "test": ("test.wp_source", "test.wp_target"),
     }
 
-    output_dir = r"E:\Story_Generator\data\csv"  # Save CSVs here
+    output_dir = r"data/csv"  # Save CSVs here
     os.makedirs(output_dir, exist_ok=True)  # Ensure output directory exists
 
     for split, (source_file, target_file) in datasets.items():
