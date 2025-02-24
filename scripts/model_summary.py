@@ -13,7 +13,7 @@ MAX_SEQUENCE_LENGTH = 500
 EMBEDDING_DIM = 128
 
 # Load data
-df = pd.read_csv("/content/train.csv")
+df = pd.read_csv("data/csv/train.csv")
 tokenizer = Tokenizer(num_words=MAX_VOCAB_SIZE, oov_token="<OOV>")
 tokenizer.fit_on_texts(df['prompt'].tolist() + df['story'].tolist())
 

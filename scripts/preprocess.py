@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Dataset Path (Update this if needed)
-data_path = "data/writingPrompts"
+data_path = "data/"
 
 # Read dataset files
 def load_data(source_file, target_file):
